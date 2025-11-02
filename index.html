@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya's Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f8f9fb;
+            color: #4f4040;
+            width: 110%;
+        }
+
+        header {
+            background: #717171;
+            color: white;
+            text-align: center;
+            ;
+            padding: 20px;
+        }
+
+        .size {
+            font-size: 30px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .intro-image {
+            font-size: 25px;
+            font-weight: 350;
+            color: #000000;
+        }
+
+        .width {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .nav {
+            list-style: none;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .nav li a:hover,
+        .nav li a.active {
+            background: #ffffff;
+            color: #283593;
+        }
+
+        .intro {
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .resume,
+        .contact {
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-image {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #383532;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+            transform: 0.6s ease transition;
+        }
+
+        .btn:hover {
+            background: #c8c1bb;
+        }
+
+        .profile {
+            width: 300px;
+            margin: 0 auto 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .skills li {
+            margin-bottom: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input,
+        form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+        }
+
+        button {
+            background: #283593;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a237e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-left: -40px;
+            margin-top: 10px;
+            background: #919191;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="size">Divyashree's Resume</h1>
+        <p class="quote"></p>
+        <nav>
+            <ul class="nav">
+                <li><a href="#index" class="active">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+
+            <h2 class="width">About Me</h2>
+            <div class="intro-image">
+                <p>Hello! I'm <strong>Divyashree R M</strong>, a passionate developer with interest and skills mentioned
+                    below.
+                    I'm currently pursuing my B.E in Computer Science and Engineering at Gopalan college of Engineering
+                    and Management, Bengaluru. I have a keen interest in web development and have worked on several
+                    projects using the MERN stack. I'm also exploring AI and IoT technologies, as seen in my project on
+                    Smart Waste Segregation. I'm eager to learn and contribute to innovative tech solutions.
+                </p>
+                <img src="Divyashree.jpg" alt="Profile Photo" height="250px" class="profile ">
+            </div>
+        </section>
+        <section class="resume" id="resume">
+            <section>
+                <h1>Personal Information</h1>
+                <ul>
+                    <li><strong>Name:</strong> Divyashree R M</li>
+                    <li><strong>Address:</strong>73/f Railway Colony Diesel Loco Shed K.R.Puram </li>
+                    <li><strong>Email:</strong> divyashree.kjm@gmail.com</li>
+                    <li><strong>Phone:</strong> +91 7019691887</li>
+                </ul>
+                <hr>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <table>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>B.E in CSE</td>
+                        <td>GCEM, Bengaluru</td>
+                        <td>2027</td>
+                    </tr>
+                    <tr>
+                        <td>12th Grade</td>
+                        <td>Kendriya vidhalaya DRDO</td>
+                        <td>2023</td>
+                    </tr>
+                </table>
+                <hr>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Python & JAVA</li>
+                    <li>Communication & Teamwork</li>
+                </ul>
+                <hr>
+                <section>
+                    <section>
+                        <h2>Courses</h2>
+                        <ul class="courses">
+                            <li>Hedera Developer Courses</li>
+                        </ul>
+                        <hr>
+                    </section>
+                    <h2>Work Experience</h2>
+                    <p><strong>student</strong> </p>
+                    <hr>
+                </section>
+                <section>
+
+                    <h2>Projects</h2>
+                    <ul>
+                        <li>Battery Management System</li>
+                        <li>Multiplayer Battle Quiz</li>
+                    </ul>
+                    <hr>
+                </section>
+                <section>
+                    <h2>Hackathons and Competitions</h2>
+                    <ul>
+                        <li>SIH Internal Hackathon </li>
+                    </ul>
+                    <section>
+                        <main class="contact" id="contact">
+                            <h2>Contact</h2><br>
+                            <form id="contactForm">
+                                <label><strong>Name:</strong></label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+
+                                <label><strong>Email:</strong></label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+
+                                <label><strong>Subject:</strong></label>
+                                <input type="text" id="subject" placeholder="Subject" required>
+
+                                <label><strong>Message:</strong></label>
+                                <textarea id="message" rows="4" placeholder="Write your message" required></textarea>
+
+                                <button type="submit">Send Message</button>
+                            </form>
+                        </main>
+                    </section>
+                    <footer>
+                        <p>&copy; 2025 Divyashree. All rights reserved.</p>
+                    </footer>
+
+                    <script>
+                        document.getElementById("contactForm").addEventListener("submit", function (e) {
+                            e.preventDefault();
+
+                            const name = document.getElementById("name").value.trim();
+                            const email = document.getElementById("email").value.trim();
+                            const subject = document.getElementById("subject").value.trim();
+                            const message = document.getElementById("message").value.trim();
+
+                            if (!name || !email || !subject || !message) {
+                                alert("Please fill out all fields!");
+                                return;
+                            }
+
+                            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                            if (!email.match(emailPattern)) {
+                                alert("Please enter a valid email address.");
+                                return;
+                            }
+
+                            alert("Message sent successfully!");
+                            this.reset();
+                        });
+
+                    </script>
+
+</body>
+
+</html>
